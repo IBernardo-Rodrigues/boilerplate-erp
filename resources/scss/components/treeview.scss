@@ -1,0 +1,20 @@
+.treeview {
+
+  li.opened {
+    ul li {
+      display: block;
+    }
+  }
+
+  // .title {
+  //   &.opened {
+  //     li.description {
+  //       display: block;
+  //     }
+  //   }
+  // }
+
+  li.description {
+    display: none;
+  }
+}

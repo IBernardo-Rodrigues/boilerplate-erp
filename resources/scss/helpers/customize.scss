@@ -1,0 +1,21 @@
+$light-text: #DAE8EB;
+$white-light: #F0F0F0;
+$light: #FFFFFF;
+$primary: #28284A;
+$secondary: #526D82;
+
+$gray-bold: #566A7F;
+$gray-semibold: #697A8D;
+$gray-light: #43597199;
+
+@import '../../../node_modules/bootstrap/scss/bootstrap.scss';
+
+$custom-colors: (
+  "graybold": #566A7F,
+  "graysemibold": #697A8D,
+  "graylight": #43597199
+);
+
+$theme-colors: map-merge($theme-colors , $custom-colors);
+
+@import 'mixins.scss';

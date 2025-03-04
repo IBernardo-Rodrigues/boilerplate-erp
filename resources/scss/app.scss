@@ -1,0 +1,138 @@
+@import 'helpers/customize';
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Public Sans', sans-serif;
+}
+
+body {
+  display: flex;
+  background-color: $white-light;
+
+  .app {
+    height: 100vh;
+    width: 100vw;
+    overflow: scroll; 
+    flex: 1 1 0;
+    padding: 2rem;
+
+    .navbar {
+      margin-top: -2rem;
+      margin-left: -2rem;
+      margin-right: -2rem;
+      height: 55px;
+      background-color: #D2E9E9;
+      box-shadow: 3px 0px 5px 4px #00000026;
+
+      .profile-image {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+      }
+    }
+
+    main {
+      padding-top: 3rem;
+      
+      h1,
+      h2,
+      h3,
+      h4,
+      h6 {
+        color: $gray-bold;
+      }
+
+      h5 {
+        font-size: 18px;
+        color: $gray-semibold;
+      }
+
+      ul {
+        list-style: none;
+      }
+
+      label {
+        color: #566A7F;
+        font-size: 12px;
+        font-weight: 600;
+      }
+
+      input, select {
+        color: #697a8d !important;
+        box-shadow: 0 0 0 transparent !important;
+      }
+
+      th {
+        font-size: 12px;
+        font-weight: 600;
+        color: $gray-bold;
+      }
+
+      td {
+        font-size: 15px;
+        color: $gray-semibold;
+      }
+
+      .card {
+        border: none;
+        box-shadow: 3px 5px 6px 0px #0000000c;
+
+        .card-title {
+          color: $gray-bold;
+        }
+
+        .card-text {
+          color: $gray-semibold;
+        }
+      }
+
+      .btn {
+        padding-left: 1rem;
+        padding-right: 1rem;
+        transition: transform 0.2s ease-out;
+
+        &:hover {
+          transform: translateY(-2px);
+        }
+      }
+      
+      .modal {
+        .modal-body {
+          text-align: center;
+
+          .material-icons {
+            font-size: 120px;
+            color: #e0e018;
+          }
+
+          p {
+            color: $gray-semibold;
+          }
+        }
+      }
+    }
+
+    .dropstart, .dropdown {
+      cursor: pointer;
+
+      .dropdown-menu {
+        box-shadow: 0 0.25rem 1rem rgba(161,172,184,.45);
+        border: none;
+
+        .dropdown-item {
+          color:#697A8D;
+
+          &:active {
+            background-color: #F0F0F0;
+          } 
+        }
+      }
+    }
+  }
+}
+
+@import './components/sidebar.scss';
+@import './components/treeview.scss';
+@import './components/dashboard.scss';

@@ -1,0 +1,43 @@
+@import 'helpers/mixins';
+@import 'helpers/customize';
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: $gray-bold;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Public Sans', sans-serif;
+}
+  
+body {
+  height: 100vh;
+  width: 100vw;
+  background-color: #F5F5F5;
+
+  main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+  }
+
+  @include mobile {
+    background: #FFF;
+  }
+}
+
+input, select {
+  color: #697a8d !important;
+  box-shadow: 0 0 0 transparent !important;
+}
+
+@import './guest-components/auth.scss';
